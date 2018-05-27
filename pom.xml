@@ -29,12 +29,12 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://nexusserver.com:8081/repository/Test_Release/</url>
+            <url>http://nexusserver:8081/repository/Maven_Test/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://nexusserver.com:8081/repository/Test_SnapShot/</url>
+          <url>http://nexusserver:8081/repository/Maven_Snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
