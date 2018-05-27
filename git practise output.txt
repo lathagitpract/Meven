@@ -1,0 +1,1004 @@
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise
+$ git clone https://github.com/lathagitpract/DevOps.git
+Cloning into 'DevOps'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise
+$ git --version
+git version 2.17.0.windows.1
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise
+$ cd DevOps/
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps                                                                                                                 (master)
+$ ll
+total 1
+-rw-r--r-- 1 Latha L 197121 8 May  5 11:31 README.md
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps                                                                                                                 (master)
+$ ls
+README.md
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps                                                                                                                 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps                                                                                                                 (master)
+$ git branch
+* master
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ touch abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ ll
+total 1
+-rw-r--r-- 1 Latha L 197121 0 May  5 11:37 abc
+-rw-r--r-- 1 Latha L 197121 8 May  5 11:31 README.md
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        abc
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+?? abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ ^C
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   abc
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ touch hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   abc
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hello
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  abc
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git reset abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+?? abc
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        abc
+        hello
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+
+?? abc
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add .
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  abc
+A  hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git reset *
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+?? abc
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add -A
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  abc
+A  hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git reset .
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+?? abc
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add stage
+fatal: pathspec 'stage' did not match any files
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git stage *
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  abc
+A  hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git reset -A
+error: unknown switch `A'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <paths>...
+   or: EXPERIMENTAL: git reset [-q] [--stdin [-z]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+    -z                    EXPERIMENTAL: paths are separated with NUL character
+    --stdin               EXPERIMENTAL: read paths from <stdin>
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git reset -all
+error: unknown switch `a'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <paths>...
+   or: EXPERIMENTAL: git reset [-q] [--stdin [-z]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<paths>...]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+    -z                    EXPERIMENTAL: paths are separated with NUL character
+    --stdin               EXPERIMENTAL: read paths from <stdin>
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  abc
+A  hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git commit -m "test commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Latha L@DESKTOP-TCBEHLK.(none)')
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git config --global user.email "l.latha391@gmail.com"
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git config --global user.name "lathagitpract"
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git commit -m "test commit"
+[master 5b198b2] test commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abc
+ create mode 100644 hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git log
+commit 5b198b2fccdefe87c91ae36cbf207c0e13791fe0 (HEAD -> master)
+Author: lathagitpract <l.latha391@gmail.com>
+Date:   Sat May 5 11:58:15 2018 +0530
+
+    test commit
+
+commit e05ba78ddf7527f69cbcbf91f0ab5d2403205ed9 (origin/master, origin/HEAD)
+Author: lathagitpract <38998887+lathagitpract@users.noreply.github.com>
+Date:   Sat May 5 11:27:59 2018 +0530
+
+    Initial commit
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git shore
+git: 'shore' is not a git command. See 'git --help'.
+
+The most similar command is
+        show-ref
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git show
+commit 5b198b2fccdefe87c91ae36cbf207c0e13791fe0 (HEAD -> master)
+Author: lathagitpract <l.latha391@gmail.com>
+Date:   Sat May 5 11:58:15 2018 +0530
+
+    test commit
+
+diff --git a/abc b/abc
+new file mode 100644
+index 0000000..e69de29
+diff --git a/hello b/hello
+new file mode 100644
+index 0000000..e69de29
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git reset @~
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git show
+commit e05ba78ddf7527f69cbcbf91f0ab5d2403205ed9 (HEAD -> master, origin/master, origin/HEAD)
+Author: lathagitpract <38998887+lathagitpract@users.noreply.github.com>
+Date:   Sat May 5 11:27:59 2018 +0530
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..927ae02
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# DevOps
+\ No newline at end of file
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        abc
+        hello
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+?? abc
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  abc
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git commit -m "test abc" abc
+[master d69443a] test abc
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+?? hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add .
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git reset @~ abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+R  abc -> hello
+?? abc
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    abc -> hello
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        abc
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git diff
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add .
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git commit -m "2nd commit"
+[master ee120ce] 2nd commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 439 bytes | 439.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/lathagitpract/DevOps.git
+   e05ba78..ee120ce  master -> master
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ ll
+total 1
+-rw-r--r-- 1 Latha L 197121 0 May  5 11:37 abc
+-rw-r--r-- 1 Latha L 197121 0 May  5 11:46 hello
+-rw-r--r-- 1 Latha L 197121 8 May  5 11:31 README.md
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ vi 1test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ vi 2test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ ll
+total 3
+-rw-r--r-- 1 Latha L 197121 9 May  5 12:19 1test
+-rw-r--r-- 1 Latha L 197121 9 May  5 12:20 2test
+-rw-r--r-- 1 Latha L 197121 0 May  5 11:37 abc
+-rw-r--r-- 1 Latha L 197121 0 May  5 11:46 hello
+-rw-r--r-- 1 Latha L 197121 8 May  5 11:31 README.md
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ cat 1test
+1st test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ cat 2test
+2nd test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add 1test
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   1test
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2test
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+A  1test
+?? 2test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ echo testappend >> 1test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   1test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   1test
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2test
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status -s
+AM 1test
+?? 2test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ cat 1test
+1st test
+testappend
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git diff
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+diff --git a/1test b/1test
+index a435b13..658923c 100644
+--- a/1test
++++ b/1test
+@@ -1 +1,2 @@
+ 1st test
++testappend
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git diff 1test
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+diff --git a/1test b/1test
+index a435b13..658923c 100644
+--- a/1test
++++ b/1test
+@@ -1 +1,2 @@
+ 1st test
++testappend
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   1test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   1test
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2test
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git diff 1test
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+diff --git a/1test b/1test
+index a435b13..658923c 100644
+--- a/1test
++++ b/1test
+@@ -1 +1,2 @@
+ 1st test
++testappend
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git add 1test
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git diff 1test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ cat 1test
+1st test
+testappend
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ echo "3rd line" >> 1test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ cat 1test
+1st test
+testappend
+3rd line
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git diff 1test
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+diff --git a/1test b/1test
+index 658923c..38719a6 100644
+--- a/1test
++++ b/1test
+@@ -1,2 +1,3 @@
+ 1st test
+ testappend
++3rd line
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   1test
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   1test
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2test
+
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git commit -m "track commit" 1test
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in 1test.
+The file will have its original line endings in your working directory.
+[master 2227d6f] track commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 1test
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        2test
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ cat 1test
+1st test
+testappend
+3rd line
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git show
+commit 2227d6f9f67fd745c4625ae178b927a3aa66dbfc (HEAD -> master)
+Author: lathagitpract <l.latha391@gmail.com>
+Date:   Sat May 5 12:27:39 2018 +0530
+
+    track commit
+
+diff --git a/1test b/1test
+new file mode 100644
+index 0000000..38719a6
+--- /dev/null
++++ b/1test
+@@ -0,0 +1,3 @@
++1st test
++testappend
++3rd line
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git diff
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$ git show
+commit 2227d6f9f67fd745c4625ae178b927a3aa66dbfc (HEAD -> master)
+Author: lathagitpract <l.latha391@gmail.com>
+Date:   Sat May 5 12:27:39 2018 +0530
+
+    track commit
+
+diff --git a/1test b/1test
+new file mode 100644
+index 0000000..38719a6
+--- /dev/null
++++ b/1test
+@@ -0,0 +1,3 @@
++1st test
++testappend
++3rd line
+
+Latha L@DESKTOP-TCBEHLK MINGW64 ~/Desktop/Latha/Professional/Git Practise/DevOps (master)
+$
